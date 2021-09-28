@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jogo.js"></script>
+    <title id="titulo">Pizza Clicker</title>
+</head>
+<body>
+
+    <main>
+        <div class="upgrades">
+            <ul>
+                <li class="desc">
+                    <span>Mouse</span> <span>Valor</span><span>Qnt atual</span><span>Click. Val</span>
+                </li>
+                <li onclick="Upgrade1()">
+                    <span>Upgrade</span> 
+                    <span id="c1Next">20 Pizzas</span>
+                    <span id="c1Qt">x0</span>
+                    <span id="c1ClickVal">+0</span>
+                </li>
+                <!-- <li>
+                    Upgrade 2 <input type="button" value="Comprar">
+                </li>
+                <li>
+                    Upgrade 3 <input type="button" value="Comprar">
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="pizza">
+            <img src="Imagens/pizzaAlt.png" alt="pizza" onclick="AttCurrency()">
+        </div>
+
+        <div class="upgrades">
+            <ul>
+                <li class="desc">
+                    <span>Funcionário</span><span>Valor</span><span>Qnt atual</span><span>Prod. Atual</span>
+                </li>
+                <li onclick="Forno()">
+                    <span>Pizzaiolo</span><span id="fornoNext">50 Pizzas</span>
+                    <span id="fornoQt">x0</span> 
+                    <span id="fornoProd">0.00/s</span>
+                </li>
+                <li onclick="Atendente()">
+                    <span>Atendente</span><span id="atendenteNext">1340 Pizzas</span>
+                    <span id="atendenteQt">x0</span> 
+                    <span id="atendenteProd">0.00/s</span>
+                </li>
+                <li onclick="Garcom()">
+                    <span>Garçom</span><span id="garcomNext">12400 Pizzas</span>
+                    <span id="garcomQt">x0</span> 
+                    <span id="garcomProd">0.00/s</span>
+                </li>
+            </ul>
+        </div>
+        
+    </main>
+
+    <div class="centro">
+        <div class="currency">
+            <h2 id="currency">Pizzas: 0</h2>
+        </div>
+    </div>
+</body>
+</html>

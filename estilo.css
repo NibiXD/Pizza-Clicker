@@ -1,0 +1,96 @@
+ul {
+    list-style: none;
+    width: 600px;
+}
+
+
+li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 25px 100px 25px 10px;
+    border: solid 2px black;
+    display: flex;
+    justify-content: left;
+}
+
+
+li input {
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upgrades li{
+   background: url("Imagens/textura.jpg");
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display: flex;
+   justify-content: space-between;
+}
+
+.upgrades li span {
+    width: 150px;
+}
+
+.upgrades li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.upgrades .desc:hover {
+    opacity: 1;
+    cursor: initial;
+}
+
+.pizza {
+    width: 400px;
+    height: 800px;
+    border: solid 2px black;
+    background: url("Imagens/textura.jpg");
+}
+
+.pizza img {
+    margin-top: 50%;
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+.centro {
+    width: 400px;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    margin: auto 730px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.currency {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border: solid 2px black;
+}
+
+.pizza img{
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
